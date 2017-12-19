@@ -33,13 +33,13 @@
 		<nav class="navigation">
 			<ul>
 				<li>
-					<a href="/{{ page.url | split: '/' | shift | shift | unshift: 'ru' | join: '/' }}" >Русский</a>
+					<a href="{{site.baseurl}}{{ page.url | replace: 'ru', 'ru' }}" >Русский</a>
 				</li>
 				<li>
-					<a href="/{{ page.url | split: '/' | shift | shift | unshift: 'en' | join: '/' }}" >English</a>
+					<a href="{{site.baseurl}}{{ page.url | replace: 'ru', 'en'}}" >English</a>
 				</li>
 				<li>
-					<a href="/{{ page.url | split: '/' | shift | shift | unshift: 'de' | join: '/' }}" >Deutsch</a>
+					<a href="{{site.baseurl}}{{ page.url | replace: 'ru', 'de'}}" >Deutsch</a>
 				</li>
 			</ul>
 		</nav>
